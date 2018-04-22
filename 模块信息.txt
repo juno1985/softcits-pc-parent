@@ -1,0 +1,2 @@
+softcits-pc-core: 8881/core
+softcits-pc-mgt: 8882/mgt
