@@ -16,3 +16,8 @@ CREATE TABLE `pc_comment` (
   KEY `fk` (`fk`),
   CONSTRAINT `pc_comment_ibfk_1` FOREIGN KEY (`fk`) REFERENCES `computer` (`id`)
 ) ENGINE=INNODB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--测试数据
+INSERT INTO computer(tradeMark,price,pic)VALUES("IBM电脑",8000.99,"ibm.png");
+INSERT INTO computer(tradeMark,price,pic)VALUES("HP电脑",4000.99,"hp.png");
+INSERT INTO computer(tradeMark,price,pic)VALUES("DELL电脑",5000.99,"dell.png");
