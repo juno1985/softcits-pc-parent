@@ -8,9 +8,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>softcits-pc-parent</name>
-	<url>http://maven.apache.org</url>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -101,7 +98,6 @@
 	<!-- maven的聚合 -->
 	<modules>
 		<module>../softcits-pc-auth</module>
-		<module>../softcits-pc-common</module>
 		<module>../softcits-pc-core</module>
 		<module>../softcits-pc-mgt</module>
 	</modules>
