@@ -100,5 +100,6 @@
 		<module>../softcits-pc-auth</module>
 		<module>../softcits-pc-core</module>
 		<module>../softcits-pc-mgt</module>
+		<module>../softcits-pc-common</module>
 	</modules>
 </project>
