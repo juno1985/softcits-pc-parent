@@ -1,0 +1,21 @@
+注册windows服务
+redis-server.exe --service-install redis.windows.conf
+
+添加数据
+set k1 value1
+
+查找数据
+get k1
+
+查看所有的key
+keys *
+
+设置过期时间
+expire key [seconds]
+
+查看还有多长时间过期
+ttl key
+
+查看key是否存在
+exists key
+
