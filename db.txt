@@ -21,3 +21,22 @@ CREATE TABLE `pc_comment` (
 INSERT INTO computer(tradeMark,price,pic)VALUES("IBM电脑",8000.99,"ibm.png");
 INSERT INTO computer(tradeMark,price,pic)VALUES("HP电脑",4000.99,"hp.png");
 INSERT INTO computer(tradeMark,price,pic)VALUES("DELL电脑",5000.99,"dell.png");
+
+--创建用户和角色表
+USE softcits_pc;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS roles;
+CREATE TABLE roles(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	rolename VARCHAR(20) NOT NULL,
+	PRIMARY KEY(id)
+);
+CREATE TABLE users(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	username VARCHAR(20) NOT NULL,
+	passwd VARCHAR(20) NOT NULL,
+	create_time DATETIME NOT NULL,
+	state VARCHAR(10) NOT NULL,
+	PRIMARY KEY(id),
+	FOREIGN KEY(id) REFERENCES roles(id)
+);
