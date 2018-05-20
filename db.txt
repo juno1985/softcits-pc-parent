@@ -37,6 +37,8 @@ CREATE TABLE users(
 	passwd VARCHAR(20) NOT NULL,
 	create_time DATETIME NOT NULL,
 	state VARCHAR(10) NOT NULL,
+	role_id INT(11),
 	PRIMARY KEY(id),
-	FOREIGN KEY(id) REFERENCES roles(id)
+	FOREIGN KEY(role_id) REFERENCES roles(id)
 );
+
