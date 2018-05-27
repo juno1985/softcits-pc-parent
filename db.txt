@@ -33,10 +33,10 @@ CREATE TABLE roles(
 );
 CREATE TABLE users(
 	id INT(11) NOT NULL AUTO_INCREMENT,
-	username VARCHAR(20) NOT NULL,
-	passwd VARCHAR(20) NOT NULL,
+	username VARCHAR(50) NOT NULL,
+	passwd VARCHAR(255) NOT NULL,
 	create_time DATETIME NOT NULL,
-	state VARCHAR(10) NOT NULL,
+	state VARCHAR(20) NOT NULL,
 	role_id INT(11),
 	PRIMARY KEY(id),
 	FOREIGN KEY(role_id) REFERENCES roles(id)
